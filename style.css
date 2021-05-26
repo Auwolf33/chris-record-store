@@ -1,4 +1,31 @@
-/*     font-family: 'Mukta', sans-serif;
+/*  font-family: 'Mukta', sans-serif;
     font-family: 'Pattaya', sans-serif; */
+body {
+    font-family: Mukta, sans-serif;
+    width: 100%;
+}
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#logo {
+    display: flex;
 
+}
+#logo p {
+
+}
+#header-img {
+    height: 50px;
+    width: 50px;
+}
+#nav-bar {
+    margin-right: 5%
+}
 
