@@ -1,0 +1,1 @@
+This is a product landing page I made for a project in freecodecamp. You can access the site here: [auwolf33.github.io/chris-record-store](https://auwolf33.github.io/chris-record-store/)
