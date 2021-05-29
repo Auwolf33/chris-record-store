@@ -17,6 +17,7 @@ header {
     box-shadow: 5px 0px 5px 5px grey;
     left: 0px;
     background-color: orange;
+    z-index: 3;
 }
 #logo {
     display: flex;
@@ -36,7 +37,7 @@ header {
 #nav-bar {
     margin-right: 20px;
 }
-#nav-bar a {
+.nav-link {
     margin: 0 10px;
     padding: 0px 5px;
     color: black;
@@ -56,6 +57,12 @@ header {
 }
 main {
     margin-top: 180px;
+    max-width: 800px;
+    margin: 180px auto 0 auto;
+    background-color: rgba(255, 160, 122, 0.514);
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px rgba(255, 160, 122, 0.514);
+    padding: 50px 50px 0 50px;
 }
 #media {
     text-align: center;
@@ -64,16 +71,56 @@ main {
 #media h2 {
     border: 2px solid black;
     background-color: orange;
-    margin: 0px 60px;
+    margin: auto;
+    max-width: max-content;
+    padding: 0px 5px;
+    position: relative;
+    z-index: 2;
 }
 #media img {
     max-height: 500px;
     position: relative;
+    margin-bottom: -40px;
     bottom: 80px;
-    z-index: -1;
+    border-radius: 10px;
 }
-
-
+#video {
+    max-width: 90%;
+}
+#newsletter {
+    text-align: center;
+    margin-top: 50px;
+}
+#email-label {
+    font-size: 18px;
+}
+#email {
+    font-size: 16px;
+    border: black solid;
+}
+#submit {
+    font-size: 16px;
+    box-shadow: 2px 2px;
+    border-radius: 0px;
+    background-color: white;
+    border: black solid 2px;
+}
+#submit:active {
+    box-shadow: none;
+    position: relative;
+    top: 2px;
+}
+#contact {
+    margin: 50px 20px 0 20px;
+}
+#contact h2 {
+    text-align: center;
+    border: 2px solid black;
+    background-color: orange;
+    max-width: max-content;
+    margin: auto;
+    padding: 0 5px;
+}
 
 @media (max-width: 600px) {
     header {
@@ -87,4 +134,8 @@ main {
         margin-right: 0px;
     }
 }
-
+@media (min-width: 600px) {
+    #media img {
+        max-height: 800px;
+    }
+}

@@ -17,16 +17,29 @@
             <p>Chris' Record Store</p>
         </div>
         <nav id="nav-bar">
-            <a href="">Media</a>
-            <a href="">Newsletter</a>
-            <a href="">Where & When</a>
+            <a class="nav-link" href="#media">Media</a>
+            <a class="nav-link" href="#newsletter">Newsletter</a>
+            <a class="nav-link" href="#contact">Where & When</a>
         </nav>
     </header>
     <main id="main">
-        <div id="media">
+        <section id="media">
             <h2>What it looks like:</h2>
             <img src="ressources/brittany-bendabout-ztsbjou4vus-unsplash.jpg" alt="Picture of a record store">
-        </div>
+            <br>
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/c_GBlzcaWlo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <form id="newsletter">
+            <label id="email-label" for="email">For our Newsletter, please enter your E-Mail:</label>
+            <br>
+            <input id="email" type="email" placeholder="Enter your E-Mail">
+            <br>
+            <input type="submit" name="submit" id="submit" value="abschicken" formaction="https://www.freecodecamp.com/email-submit">
+        </form>
+        <section id="contact">
+            <h2>Where and when to find us:</h2>
+            <p>Münchner Straße 33 <br> 81677 München <br> Mo-Fr 08:00-16:00</p>
+        </section>
     </main>
     
 </body>
